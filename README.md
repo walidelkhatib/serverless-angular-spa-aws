@@ -1,6 +1,16 @@
-# Single Page Application (SPA) Deployments on Amazon S3 Using DevOps
+# Serverless Angular SPA on AWS — Full-Stack with CI/CD
 
-This project showcases a modern, lightweight Single Page Application (SPA) architecture using Angular, integrated with a serverless backend powered by AWS Lambda, API Gateway, and DynamoDB, and deployed through a CI/CD pipeline using AWS CodePipeline and CodeBuild.
+> A production-style, cloud-native **Single Page Application**: an **Angular**
+> frontend hosted on **S3 + CloudFront**, a **serverless backend** (**API Gateway
+> + Lambda + DynamoDB**) defined as Infrastructure-as-Code with **AWS SAM**, and an
+> automated **CI/CD pipeline** (**CodePipeline + CodeBuild**) that deploys both on
+> every push.
+
+**Stack:** `Angular 19` · `Amazon S3` · `CloudFront` · `API Gateway` · `AWS Lambda (Python)` · `DynamoDB` · `AWS SAM` · `CodePipeline` · `CodeBuild`
+
+This project demonstrates how the pieces of a modern cloud-native SPA fit
+together — client-side routing, a REST backend, infrastructure as code, and a
+fully automated release pipeline.
 
 ## Overview
 
@@ -15,7 +25,7 @@ This project is designed to bridge the frontend-backend gap and highlight the in
 ## Project Structure
 <pre>
 aws-spa-demo/
-├── frontend/
+├── frontend/           # Angular SPA (standalone components, routing)
 │   ├── src/           # SPA components, routing, UI logic
 │   ├── angular.json
 │   ├── ...

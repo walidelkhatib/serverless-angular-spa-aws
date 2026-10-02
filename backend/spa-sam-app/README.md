@@ -1,13 +1,19 @@
-# spa-sam-app
+# spa-sam-app — serverless backend
 
-This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
+Serverless backend for the SPA, deployable with the AWS SAM CLI. It exposes a
+small REST API over API Gateway backed by two Lambda functions and a DynamoDB
+table.
 
-- hello_world - Code for the application's Lambda function.
-- events - Invocation events that you can use to invoke the function.
-- tests - Unit tests for the application code. 
-- template.yaml - A template that defines the application's AWS resources.
+- `get_items/` — Lambda that scans the DynamoDB table (with pagination) and
+  returns all stored messages as JSON.
+- `put_item/` — Lambda that validates a request body and writes a new message
+  (with a generated UUID) to the DynamoDB table.
+- `tests/` — unit and integration tests for the handlers.
+- `template.yaml` — SAM template defining the Lambda functions, API Gateway API,
+  and DynamoDB table.
 
-The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
+You can update `template.yaml` to add AWS resources through the same deployment
+process that updates your application code.
 
 If you prefer to use an integrated development environment (IDE) to build and test your application, you can use the AWS Toolkit.  
 The AWS Toolkit is an open source plug-in for popular IDEs that uses the SAM CLI to build and deploy serverless applications on AWS. The AWS Toolkit also adds a simplified step-through debugging experience for Lambda function code. See the following links to get started.

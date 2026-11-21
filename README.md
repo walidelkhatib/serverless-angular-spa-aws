@@ -1,4 +1,4 @@
-# Serverless Angular SPA on AWS — Full-Stack with CI/CD
+# Serverless Angular SPA on AWS - Full-Stack with CI/CD
 
 > A production-style, cloud-native **Single Page Application**: an **Angular**
 > frontend hosted on **S3 + CloudFront**, a **serverless backend** (**API Gateway
@@ -136,9 +136,3 @@ Update your *CloudFront distribution* with a custom error response:
   - **HTTP Response Code:** 200
 
 This tells CloudFront to serve index.html (the SPA entry point) for any 403 errors, allowing the Angular router to take over from there.
-
----
-🙌 Author  
-
-**Walid El Khatib**  
-*Teacher by Day, Builder by Night*

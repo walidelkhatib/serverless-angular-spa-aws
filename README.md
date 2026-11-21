@@ -1,10 +1,6 @@
 # Serverless Angular SPA on AWS - Full-Stack with CI/CD
 
-> A production-style, cloud-native **Single Page Application**: an **Angular**
-> frontend hosted on **S3 + CloudFront**, a **serverless backend** (**API Gateway
-> + Lambda + DynamoDB**) defined as Infrastructure-as-Code with **AWS SAM**, and an
-> automated **CI/CD pipeline** (**CodePipeline + CodeBuild**) that deploys both on
-> every push.
+A production-style, cloud-native **Single Page Application**: an **Angular** frontend hosted on **S3 + CloudFront**, a **serverless backend** (**API Gateway + Lambda + DynamoDB**) defined as Infrastructure-as-Code with **AWS SAM**, and an automated **CI/CD pipeline** (**CodePipeline + CodeBuild**) that deploys both on every push.
 
 **Stack:** `Angular 19` · `Amazon S3` · `CloudFront` · `API Gateway` · `AWS Lambda (Python)` · `DynamoDB` · `AWS SAM` · `CodePipeline` · `CodeBuild`
 
